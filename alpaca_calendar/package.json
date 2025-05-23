@@ -1,0 +1,16 @@
+{
+  "name": "alpaca_calendar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "sass": "^1.89.0",
+    "vite": "^6.3.5"
+  }
+}

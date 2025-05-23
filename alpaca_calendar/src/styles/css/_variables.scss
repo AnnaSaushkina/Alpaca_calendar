@@ -1,0 +1,39 @@
+:root {
+  font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  font-size: 12px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --bg-primaty: #fff;
+  --text-primary: #333;
+  --cell-size: min(4.5vw, 42px);
+  --transition: 0.25s ease;
+}
+
+[data-theme="dark"] {
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.1;
+}
