@@ -49,6 +49,9 @@
   align-items: center;
   text-transform: uppercase;
 }
+.month-title {
+  color: white;
+}
 
 .nav-button {
   color: transparent;
@@ -74,9 +77,14 @@
 .next:after,
 .previous:after {
   content: "";
-  background: center / contain no-repeat url("../img/next.svg");
-  padding: 0;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='12' viewBox='0 0 8 12'><path fill='white' d='M0 1.4L1.5 0L8 6L1.5 12L0 10.6L5 6z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 8px;
+  height: 12px;
+  display: inline-block;
+
+  padding-top: 16px;
 }
 .previous:after {
   rotate: 180deg;
@@ -91,6 +99,7 @@
   font-size: 12px;
   padding: 4px 10px;
   font-weight: 500;
+  color: white;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   border: none;
