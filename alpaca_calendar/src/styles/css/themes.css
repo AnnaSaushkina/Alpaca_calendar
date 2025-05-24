@@ -1,53 +1,3 @@
-.dark-theme .nav-button {
-  background-color: transparent;
-}
-
-.dark-theme .nav-button:hover,
-.dark-theme .nav-button:focus {
-  background-color: rgba(38, 116, 161, 0.2);
-}
-
-.day.is-selected {
-  background-color: #acacac;
-  border: 2px solid #ffffff;
-  color: #000;
-  z-index: 2;
-}
-
-.day.range-start:not(.is-selected),
-.day.range-end:not(.is-selected) {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  z-index: 2;
-  color: #000;
-}
-
-.day.range-start:not(.is-selected) {
-  border-radius: 22px 0 0 22px;
-  width: 100%;
-  height: 100%;
-}
-
-.dark-theme .day.range-start:not(.is-selected),
-.day.range-start:not(.is-selected) {
-  margin-left: 8px;
-}
-
-.dark-theme .day.range-end:not(.is-selected),
-.day.range-end:not(.is-selected) {
-  margin-right: 8px;
-}
-
-@media (max-width: 300px) {
-  .dark-theme .day.range-start:not(.is-selected),
-.day.range-start:not(.is-selected) {
-    margin-left: 0px;
-  }
-  .dark-theme .day.range-end:not(.is-selected),
-.day.range-end:not(.is-selected) {
-    margin-right: 0px;
-  }
-}
 .day.range-end:not(.is-selected) {
   border-radius: 0 22px 22px 0;
   width: 100%;
@@ -68,11 +18,6 @@
   transform: translate(-50%, -50%);
 }
 
-.day:hover {
-  background-color: #131417;
-  border: 2px solid #ffffff;
-}
-
 .day.in-range {
   background-color: #ffffff;
   color: #000;
@@ -80,6 +25,56 @@
   width: 100%;
   height: 100%;
   border-radius: 0;
+}
+
+.day.is-selected {
+  background-color: #acacac;
+  border: 2px solid #ffffff;
+  color: #000;
+  z-index: 2;
+}
+
+.day:hover {
+  background: #b8b9b9;
+  border: 2px solid #fff;
+  color: #000;
+}
+
+.dark-theme .day:hover {
+  color: #fff;
+}
+
+.day.range-start:not(.is-selected),
+.day.range-end:not(.is-selected) {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  z-index: 2;
+  color: #000;
+}
+
+.day.range-start:not(.is-selected) {
+  border-radius: 22px 0 0 22px;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-theme .nav-button {
+  background-color: transparent;
+}
+
+.dark-theme .nav-button:hover,
+.dark-theme .nav-button:focus {
+  background-color: rgba(38, 116, 161, 0.2);
+}
+
+.dark-theme .day.range-start:not(.is-selected),
+.day.range-start:not(.is-selected) {
+  margin-left: 8px;
+}
+
+.dark-theme .day.range-end:not(.is-selected),
+.day.range-end:not(.is-selected) {
+  margin-right: 8px;
 }
 
 .dark-theme .day.is-selected {
@@ -106,6 +101,17 @@
 }
 
 .dark-theme .day:hover {
-  background-color: rgba(45, 156, 219, 0.3);
-  border: 2px solid rgba(45, 156, 219, 0.8);
+  background-color: rgba(45, 156, 219, 0.6);
+  border: 2px solid rgb(45, 156, 219);
+}
+
+@media (max-width: 300px) {
+  .dark-theme .day.range-start:not(.is-selected),
+.day.range-start:not(.is-selected) {
+    margin-left: 0px;
+  }
+  .dark-theme .day.range-end:not(.is-selected),
+.day.range-end:not(.is-selected) {
+    margin-right: 0px;
+  }
 }

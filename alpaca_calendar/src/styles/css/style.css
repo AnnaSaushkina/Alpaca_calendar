@@ -34,7 +34,7 @@
 }
 
 .controls {
-  padding: 0 8px;
+  padding: 8px 8px 0px;
   display: flex;
   gap: 6px;
   flex-direction: column-reverse;
@@ -43,8 +43,9 @@
 .month {
   display: flex;
   position: relative;
-  z-index: 2;
+  z-index: 10;
   min-height: 40px;
+  padding-bottom: 8px;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
@@ -91,9 +92,9 @@
   max-width: -moz-fit-content;
   max-width: fit-content;
   font-family: "Roboto";
-  z-index: 2;
-  font-size: 8px;
-  padding: 4px 8px;
+  z-index: 10;
+  font-size: 12px;
+  padding: 4px 10px;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
@@ -118,8 +119,8 @@
 
 .day,
 .next-month {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   font-size: 12px;
   font-family: "Roboto";
   font-weight: 500;

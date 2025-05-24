@@ -128,6 +128,15 @@ export class Calendar {
       this.root.classList.remove('dark-theme');
     }
     localStorage.setItem('calendarDarkTheme', this.state.darkTheme);
+
+
+    const bg = document.body
+    // Обновляем классы
+    this.root.classList.toggle('dark-theme', this.state.darkTheme);
+    bg.classList.toggle('dark-bg', this.state.darkTheme);
+    
+    // Сохраняем в localStorage
+    localStorage.setItem('calendarDarkTheme', this.state.darkTheme);
   }
 
 
@@ -145,6 +154,7 @@ export class Calendar {
         this.render(); 
       }
     });
+
   }
 
   
@@ -167,4 +177,10 @@ export class Calendar {
     
     this.render();
   }
+
+
+  // switchBgTheme() {
+   
+  // }
 }
+
